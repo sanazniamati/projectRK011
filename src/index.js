@@ -1,37 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Stage, Layer, Rect } from "react-konva";
+import { Stage, Layer, Rect, Text } from "react-konva";
 
 const App = () => {
   return (
     <Stage width={window.innerWidth} height={window.innerHeight}>
       <Layer>
         <Rect
-          x={20}
-          y={20}
-          width={100}
-          height={50}
-          fill="green"
-          stroke="black"
-          strokWidth={4}
-        />
-        <Rect
           x={150}
-          y={40}
-          width={100}
-          height={50}
-          fill="red"
-          shadowBlur={10}
-          stroke="black"
-          cornerRadius={10}
-        />
-        <Rect
-          x={50}
-          y={120}
-          width={100}
+          y={150}
+          width={300}
           height={100}
-          fill="blue"
-          cornerRadius={[0, 10, 20, 30]}
+          stroke={"#0D4164"}
+          cornerRadius={[50, 0, 50, 50]}
+        />
+        <Text
+          x={190}
+          y={175}
+          text={`GITWeLD`}
+          fontSize={50}
+          fill={"#0D4164 "}
+          fontStyle={"bold"}
         />
       </Layer>
     </Stage>
